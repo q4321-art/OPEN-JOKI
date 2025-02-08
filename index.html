@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTOFOLIO SAYA</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #007BFF, #ffffff);
+            text-align: center;
+            transition: all 0.5s ease-in-out;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .container:hover {
+            transform: scale(1.02);
+        }
+        h1 {
+            color: #0056b3;
+            font-size: 2em;
+            transition: color 0.3s;
+        }
+        h1:hover {
+            color: #003d82;
+        }
+        p {
+            font-size: 1.2em;
+            color: #333;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 1em;
+            color: #fff;
+            background: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 0%;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .hidden {
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: opacity 0.5s ease, max-height 0.5s ease;
+        }
+        .visible {
+            opacity: 1;
+            max-height: 500px;
+        }
+    </style>
+    <script>
+        function toggleJoki() {
+            var section = document.getElementById("joki-section");
+            var toggleButton = document.getElementById("toggleBtn");
+            if (section.classList.contains("hidden")) {
+                section.classList.remove("hidden");
+                section.classList.add("visible");
+                toggleButton.textContent = "Sembunyikan Joki Tugas";
+            } else {
+                section.classList.remove("visible");
+                section.classList.add("hidden");
+                toggleButton.textContent = "Lihat Joki Tugas";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>WELCOME!!</h1>
+        <img src="PROFIL.jpeg" alt="Foto Profil" class="profile-img">
+        <p>HASSALAMU'ALAIKUM WR.WB PERKENALKAN SAYA AGAM AL HAKIM HASIBUAN BIASA DI PANGGIL AGAM SAYA DI SINI DAPAT MEMBANTU ANDA DENGAN GENDALA TUGAS ANDA.
+            DAN Saya adalah seorang Web Developer yang berfokus pada desain yang responsif dan interaktif.</p>
+        <button id="toggleBtn" class="btn" onclick="toggleJoki()">LIST JOKI</button>
+        <div id="joki-section" class="hidden">
+            <div class="joki-list">
+                <h2>BERIKUT JOKI TUGAS YANG SAYA TAWARKAN:</h2>
+                <ul>
+                    <li>PEMBUATAN WEBSITE SEDERHANA</li>
+                    <li>PEMROGRAMAN DENGAN MENGGUNAKAN BAHASA PEMROGRAMAN HTML,JAVASCRIPT,CSS DAN PYTHON</li>
+                    <li>DESAIN UI/UX</li>
+                    <li>Analisis Data</li>
+                    <li>DOKUMENTASI DAN LAPORAN PORTOFOLIO WEBSITE
+                </ul>
+                <h2>DAN SAYA JUGA MELAYANI JOKI TUGAS SEKOLAH MAUPUN KULIAH</h2>
+                <ul>
+                    <li>MAKALAH DALAM BENTUK B INDONESIA HINGGA B INGGRIS</li>
+                    <li>PPT</li>
+                    <li>LAPORAN PRAKTIKUM TULIS TANGAN MAUPUN KETIK</li>
+                    <li>KARYA ILMIAH</li>
+                    <li>DLL</li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact">
+            <h2>Hubungi Saya</h2>
+            <p>Email: <a href="mailto:agam85767@gmail.com">agam85767@gmail.com</a></p>
+            <p>WhatsApp: <a href="https://wa.me/6287856643707" target="_blank">0878-5664-3707</a></p>
+        </div>
+    </div>
+</body>
+</html>
